@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Microsoft YaHei';
+	background-color: #F2F2F2;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.banxin{
+	width: 1020px;
+	margin: 0 auto;
+}
+.title{
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ffffff;
+	padding-left: 10px;
+	letter-spacing: 2px;
+	background: -webkit-linear-gradient(left, #ED1C40 1%, #F2F2F2 99%); 
+    background: -o-linear-gradient(right, #ED1C40 1%, #F2F2F2 99%); 
+    background: -moz-linear-gradient(right, #ED1C40 1%, #F2F2F2 99%);
+    background: linear-gradient(to right, #ED1C40 1%, #F2F2F2 99%); 
+}
+.edit{
+	height: 70px;
+	border: 1px solid #ED1C40;
+}
+.edit-l{
+	float: left;
+}
+.edit-r{
+	float: right;
+}
+.grade{
+	width: 120px;
+	height: 120px;
+	border: 5px solid #ED1C40;
+	border-radius: 120px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-60px);
+}
+.grade div{
+	width: 112px;
+    height: 112px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 56px;
+    background-color: #ED1C40;
+    text-align: center;
+    line-height: 112px;
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 900;
+}
+.container{
+	width: 1070px;
+	background-color: #fff;
+	margin: 40px auto;
+	padding: 0 40px;
+}
+/*1、个人部分*/
+.personage {
+	height: 400px;
+}
+.personage img{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	border-radius: 150px;
+	position: relative;
+	margin-top: 76px;
+	left: 50%;
+	transform: translateX(-75px);
+}
+.personage .name{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+}
+.personage .job{
+	height: 20px;
+	text-align: center;
+}
+.personage .interest{
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+/*2、个性部分*/
+.individuality{
+	height: 716px;
+	background-color: yellow;
+}
+/*3、技能部分*/
+.skill{
+	height: 700px;
+	background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*4、信用部分*/
+.cardit{
+	height: 360px;
+	padding-top: 60px;
+}
+.cardit .earlate{
+	width: 150px;
+	height: 50px;
+	margin-top: 36px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-68px);
+	color: #ED1C40;
+}
+.cardit .earlate .earlate-t span:nth-child(1){
+	margin-right: 40px;
+}
+.cardit .earlate .earlate-t span:nth-child(2){
+	font-size: 12px;
+	position: relative;
+	top: -2px;
+}
+.cardit .earlate .earlate-t span:nth-child(3){
+	margin-left: 40px;
+}
+.cardit .earlate .earlate-b span:nth-child(1){
+	float: left;
+	margin-left: 7px;
+}
+.cardit .earlate .earlate-b span:nth-child(2){
+	float: right;
+	margin-right: 9px;
+}

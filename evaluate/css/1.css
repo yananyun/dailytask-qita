@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Microsoft YaHei';
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.banxin{
+	width: 1150px;
+	margin: 0 auto;
+}
+.title{
+	height: 60px;
+	padding-top: 34px;
+}
+.title .flag{
+	width: 4px; 
+	height: 20px; 
+	background-color: #ED1C40; 
+	float:left;
+	margin-right: 10px;
+	margin-top: 4px;
+}
+.title h3{
+	font-weight: 300;
+	font-size: 20px;
+}
+.red{
+	background-color: #ED1C40;
+}
+/*1、header部分*/
+header{
+	height: 70px;
+	background-color: #fff;
+	position: relative;
+}
+header .middle{
+	position: absolute;
+	left: 50%;
+	margin-left: -92px;
+	margin-top: 12px;
+}
+header .middle img{
+	width: 184px;
+}
+
+/*2、banner部分*/
+.banner{
+	height: 300px;
+	overflow: hidden;
+}
+.banner img{
+	width: 1150px;
+}
+
+/*3、活动介绍*/
+.intro{
+	padding-bottom: 34px;
+}
+.intro p{
+	display: block;
+	color: #666666;
+	font-size: 14px;
+	text-indent:25px;
+	line-height: 25px;
+}
+/*4、头像列表*/
+.headList{
+	background: #F2F2F2;
+	height: 260px;
+}
+.headList-l{
+	height: 170px;
+	width: 600px;
+	float: left;
+}
+.headList-l img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 30px;
+}
+.headList-l h3{
+	display: block;
+	font-size: 20px;
+	color: #000;
+	font-weight: 100;
+	margin-top: 15px;
+}
+.headList-l span{
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 14px;
+	color: #666666;
+}
+.headList-l p{
+	display: block;
+	font-size: 14px;
+	color: #666666;
+}
+.headList-r{
+	width: 550px;
+	float: right;
+}
+.headList-r li{
+	width: 60px;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	float: right;
+	margin-left: 30px;
+}
+.headList-r img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+/*5、打分*/
+.grade{
+	height: 410px;
+	background-color: #F2F2F2;
+}
+.grade .content{
+	background-color: #fff;
+}
+.content .list{
+	height: 300px;
+	overflow: hidden;
+}
+.content .list span{
+	font-size: 14px;
+}
+.content .list ul .listLi{
+	width: 530px;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.content .list ul .listLi ul li{
+	width: 30px;
+	height: 10px;
+	background-color: #cccccc;
+	float: left;
+	margin-right: 5px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+
+
+
+
+
