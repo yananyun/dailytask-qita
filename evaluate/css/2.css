@@ -31,13 +31,29 @@ a{
 }
 .edit{
 	height: 70px;
-	border: 1px solid #ED1C40;
+	border-bottom: 1px solid #ccc;
 }
 .edit-l{
 	float: left;
 }
+.edit-l>div{
+	width: 4px; 
+	height: 22px; 
+	background-color: #ED1C40; 
+	float: left;
+	margin-top: 38px; 
+	margin-right: 10px;
+}
+.edit-l>span{
+	display: inline-block;
+    margin-top: 38px;
+    cursor: pointer;
+}
 .edit-r{
 	float: right;
+	font-size: 12px;
+	color: #ED1C40;
+	margin-top: 46px;
 }
 .grade{
 	width: 120px;
@@ -102,18 +118,16 @@ a{
 	background-color: yellow;
 }
 /*3、技能部分*/
-.skill{
-	height: 700px;
+.evaluate{
+	height: 400px;
 	background-color: pink;
+	padding-top: 60px;
 }
-
-
-
-
-
-
-
-
+.experience{
+	height: 400px;
+	background-color: pink;
+	padding-top: 60px;
+}
 
 
 

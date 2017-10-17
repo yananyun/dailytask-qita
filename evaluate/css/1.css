@@ -31,9 +31,7 @@ a{
 	font-weight: 300;
 	font-size: 20px;
 }
-.red{
-	background-color: #ED1C40;
-}
+
 /*1、header部分*/
 header{
 	height: 70px;
@@ -154,7 +152,9 @@ header .middle img{
 	margin-top: 8px;
 	cursor: pointer;
 }
-
+.red{
+	background-color: red;
+}
 
 
 

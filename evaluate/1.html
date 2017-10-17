@@ -83,92 +83,22 @@
 			<ul>
 				<li class="listLi">
 					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+					<ul class="listUl">
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
 					</ul>
 				</li>
 				<li class="listLi">
 					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li class="listLi">
-					<p><span>创造力:</span><span>5</span><span>分</span></p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+					<ul class="listUl">
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
+						<li value="0"></li>
 					</ul>
 				</li>
 			</ul>
@@ -179,8 +109,57 @@
 
 </body>
 <script src="js/jquery.min.js"></script>
-
+	
 <script>
 
+	$('.listUl').each(function(i,v){
+		$(v).children('li').each(function(a,b){
+			$(b).click(function(a){
+				$(this).css('background-color','red');
+				$(this).attr('value',1);
+				$(this).siblings().each(function(j,f){
+					if(j<$(b).index()){
+						$(f).css('background-color','red');	
+						$(f).attr('value',1);
+					}else{
+						$(f).css('background-color','#cccccc');	
+						$(f).attr('value',0);
+					}
+				})
+			})
+		})
+	})
+	$('.listUl').each(function(i,v){
+		$(v).children('li').each(function(a,b){
+			$(b).mouseover(function(a){
+				$(this).css('background-color','red');
+				$(this).siblings().each(function(j,f){
+					if(j<$(b).index()){
+						$(f).css('background-color','red');	
+					}else{
+						if($(f).attr('value')!==1){
+							$(f).css('background-color','#cccccc');	
+						}	
+					}
+				})
+			})
+		})
+	})
+	$('.listUl').each(function(i,v){
+		$(v).children('li').each(function(a,b){
+			$(b).mouseleave(function(a){
+				if($(b).attr('value')!==1){
+					$(this).css('background-color','#cccccc');
+				}
+				$(this).siblings().each(function(j,f){
+					if(j<$(b).index()){
+						if($(f).attr('value')!==1){
+							$(f).css('background-color','#cccccc');	
+						}
+					}
+				})
+			})
+		})
+	})
 </script>
 </html>
