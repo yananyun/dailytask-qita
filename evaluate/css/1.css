@@ -11,9 +11,84 @@ ul{
 a{
 	text-decoration: none;
 }
-.banxin{
-	width: 1150px;
+/*1、header部分*/
+header{
+	height: 70px;
+	background-color: #fff;
+	position: relative;
+}
+header .middle{
+	position: absolute;
+	left: 50%;
+	margin-left: -92px;
+	margin-top: 12px;
+}
+header .middle img{
+	float: left;
+	width: 60px;
+	border-radius: 30px;
+}
+header .middle h2{
+	line-height: 58px; /*垂直居中*/  
+    text-align: center; /*文本居中*/ 
+	float: left;
+}
+.navlist{
+	margin: 20px 10% 0 10%;
+	overflow: hidden;
+}
+.navgitorList{
+	margin: 0 20%;
+}
+.navgitorList  li{
+	float: left;
+}
+.navgitorList  li a{
+	display: block;
+	width: 140px;
+	height: 20px;
+	border: 1px solid #0000FF;
+	margin-left: 5px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+
+}
+.navgitorList  li a:link{
+ background-color: #698B22;
+ color: #000000;
+ 
+}
+.navgitorList  li a:hover{
+ background-color: #A020F0;
+ 
+}
+.navgitorList  li a:active{
+ color: #AEEEEE;
+
+}
+
+/*2、banner 图片部分*/
+.banner{
+	margin: 20px 10% 20px 10%;
+	overflow: hidden;
+}
+
+.banner img{
+	display: block;
 	margin: 0 auto;
+}
+/*3、个人寄语*/
+
+.intro{
+	padding-bottom: 34px;
+}
+.intro p{
+	display: block;
+	color: #666666;
+	font-size: 14px;
+	text-indent:25px;
+	line-height: 25px;
 }
 .title{
 	height: 60px;
@@ -31,44 +106,7 @@ a{
 	font-weight: 300;
 	font-size: 20px;
 }
-
-/*1、header部分*/
-header{
-	height: 70px;
-	background-color: #fff;
-	position: relative;
-}
-header .middle{
-	position: absolute;
-	left: 50%;
-	margin-left: -92px;
-	margin-top: 12px;
-}
-header .middle img{
-	width: 184px;
-}
-
-/*2、banner部分*/
-.banner{
-	height: 300px;
-	overflow: hidden;
-}
-.banner img{
-	width: 1150px;
-}
-
-/*3、活动介绍*/
-.intro{
-	padding-bottom: 34px;
-}
-.intro p{
-	display: block;
-	color: #666666;
-	font-size: 14px;
-	text-indent:25px;
-	line-height: 25px;
-}
-/*4、头像列表*/
+/*4、团队简介-头像列表*/
 .headList{
 	background: #F2F2F2;
 	height: 260px;
@@ -121,29 +159,30 @@ header .middle img{
 	height: 60px;
 	border-radius: 30px;
 }
-/*5、打分*/
+/*5、项目打分*/
 .grade{
-	height: 410px;
+	height: 600px;
 	background-color: #F2F2F2;
 }
 .grade .content{
 	background-color: #fff;
 }
 .content .list{
-	height: 300px;
+	height: 600px;
+	float: left;
 	overflow: hidden;
 }
 .content .list span{
 	font-size: 14px;
 }
-.content .list ul .listLi{
+ .listLi{
 	width: 530px;
 	overflow: hidden;
 	float: left;
 	margin-bottom: 20px;
 	margin-left: 20px;
 }
-.content .list ul .listLi ul li{
+ .listUl li{
 	width: 30px;
 	height: 10px;
 	background-color: #cccccc;
@@ -152,6 +191,27 @@ header .middle img{
 	margin-top: 8px;
 	cursor: pointer;
 }
+.listUl li a:link{
+	 color: #98FB98;
+}
+.listUl li a:hover{
+	 color: #98FB98;
+}
+/*2、weixin 图片部分*/
+.weixin{
+	
+	margin: 20px 0 20px 0;
+	
+}
+
+.weixin img{
+	display: block;
+	margin: 0 auto;
+}
+/*.content .list ul .listLi ul li a:visited{
+
+ color: #00FF00;
+}*/
 .red{
 	background-color: red;
 }
