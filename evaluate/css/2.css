@@ -13,12 +13,13 @@ a{
 	text-decoration: none;
 }
 .banxin{
-	width: 1020px;
+
 	margin: 0 auto;
 }
 .title{
 	height: 50px;
 	line-height: 50px;
+	margin-top: 60px;
 	font-size: 20px;
 	font-weight: 700;
 	color: #ffffff;
@@ -55,37 +56,17 @@ a{
 	color: #ED1C40;
 	margin-top: 46px;
 }
-.grade{
-	width: 120px;
-	height: 120px;
-	border: 5px solid #ED1C40;
-	border-radius: 120px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-60px);
-}
-.grade div{
-	width: 112px;
-    height: 112px;
-    margin-top: 4px;
-    margin-left: 4px;
-    border-radius: 56px;
-    background-color: #ED1C40;
-    text-align: center;
-    line-height: 112px;
-    font-size: 70px;
-    color: #ffffff;
-    font-weight: 900;
-}
+
 .container{
-	width: 1070px;
 	background-color: #fff;
 	margin: 40px auto;
 	padding: 0 40px;
 }
 /*1、个人部分*/
 .personage {
+	margin: 0 auto;
 	height: 400px;
+	background-color: #FFE4B5;
 }
 .personage img{
 	width: 150px;
@@ -108,21 +89,41 @@ a{
 	text-align: center;
 }
 .personage .interest{
+	margin: 10px;
 	height: 50px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 20px;
 }
 /*2、个性部分*/
 .individuality{
-	height: 716px;
+	height: 400px;
 	background-color: yellow;
 }
-/*3、技能部分*/
-.evaluate{
-	height: 400px;
-	background-color: pink;
-	padding-top: 60px;
+#main{
+	position: relative;
+	padding-top: 20px;
+	/*left: 50%;*/
+	left: 10%;
+	margin: 0 10% 5% 10px;
+	/*transform: translateX(-100px);*/
+
 }
+/*3、技能部分 粉红 评价技能区 分数间隔 是因为这里的padding-top
+这才发现 padding 不影响背景颜色 显示范围 而margin影响
+*/
+.evaluate{
+	height: 680px;
+	background-color: pink;
+	padding-top: 20px;
+	margin-top: 60px;
+}
+.jinengList{
+	margin: 20px;
+}
+.ul1{
+	margin: 0 20px 0 20px;
+}
+/*粉红 评价阅历区*/*/
 .experience{
 	height: 400px;
 	background-color: pink;
@@ -131,8 +132,10 @@ a{
 
 
 
+/*4、信用部分 粉红 评价技能区 分数间隔 是因为这里的padding-top
+这才发现 padding 不影响背景颜色 显示范围 而margin影响
+*/
 
-/*4、信用部分*/
 .cardit{
 	height: 360px;
 	padding-top: 60px;
@@ -145,6 +148,29 @@ a{
 	left: 50%;
 	transform: translateX(-68px);
 	color: #ED1C40;
+}
+/* 信用 分数 logo*/
+.grade{
+	width: 120px;
+	height: 120px;
+	border: 5px solid #ED1C40;
+	border-radius: 120px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-60px);
+}
+.grade div{
+	width: 112px;
+    height: 112px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 56px;
+    background-color: #ED1C40;
+    text-align: center;
+    line-height: 112px;
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 900;
 }
 .cardit .earlate .earlate-t span:nth-child(1){
 	margin-right: 40px;
