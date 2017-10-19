@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>小叮当的生活主页</title>
+	
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/1.css">
-
 </head>
 <body>
 	<!-- 1、header部分 -->
@@ -37,9 +40,17 @@
 			<div class="flag"></div>
 			<h3>个人寄语</h3>
 		</div>
-		<p>	
-			 生活 充满激情 ，朝既定方向前行
-		</p>
+		<div class="introUL">
+			<ul >
+			<li><p>生活 充满激情 ，朝既定方向前行；</p></li>
+			<li> <p>每次看到这张照片老婆的笑 都会有一股力量涌起 以前总有很多梦想 总觉得有很多大事要做 现在我的梦想是让这份笑容持续更久 让朋友和家人欢聚一堂 以前一直想成为解放军感觉很神圣 现在更想成为诗人作家音乐家 谱写属于自己的那份生活的乐章</p> </li>
+			<li><p>以下是个人家庭十九大决议:为迎合党的十九大，我们制定第一个五年计划，我们要攻坚克难,狠抓经济建设,为国家的2020年全面建设小康社会,全国脱贫任务,贡献我们的一份力量</p></li>
+		</ul>
+		</div>
+		
+			 
+			
+		
     </div>
 
 	<!-- 4、头像列表 -->
@@ -48,7 +59,8 @@
 			<div class="flag"></div>
 			<h3>团队简介</h3>
 		</div>
-		<div >
+		
+		<div class="headListContent">
 			<div class="headList-l">
 			<img src="img/icon0.jpg" alt="">
 			<h3>丁亚男</h3>
@@ -81,22 +93,27 @@
 			
 			</ul>
 			</div>
-		</div>	
+
+		</div>
+			
+		
 	</div>
 
 	<!-- 5、打分 -->
-	<div class="grade">	
-		<div class="content">
+	<div class="grade">
 			<div class="title ">
 				<div class="flag"></div>
 				<h3>项目打分</h3>
 			</div>	
-			<div class="list">
+		<div class="gradecontent">
+
+			<div class="gradelist">
+
 			<ul>
-				<li class="listLi">
+				<li class="gradelistLi">
 					<p><span>英特尔集分宝:</span><span>5</span><span>分</span></p>
 					<span>访问测试:<a href="http://beta.bugly.qq.com/ypb5"> 英特尔集分宝项目  </a><p>测试使用 账号 : 密码 :123456   qwe123456 </p></span>
-					<ul class="listUl">
+					<ul class="gradelistUl">
 						<li value="0"></li>
 						<li value="0"></li>
 						<li value="0"></li>
@@ -104,10 +121,10 @@
 						<li value="0"></li>
 					</ul>
 				</li>
-				<li class="listLi">
+				<li class="gradelistLi">
 					<p><span>惠普问卷调查:</span><span>5</span><span>分</span></p>
 					<span>访问测试:<a href="http://beta.bugly.qq.com/h59i"> 惠普问卷调查项目  </a><p>测试使用 账号 18801320514 12345678asd </p></span>
-					<ul class="listUl">
+					<ul class="gradelistUl">
 						<li value="0"></li>
 						<li value="0"></li>
 						<li value="0"></li>
@@ -115,10 +132,10 @@
 						<li value="0"></li>
 					</ul>
 				</li>
-				<li class="listLi">
+				<li class="gradelistLi">
 					<p><span>cocos2d-x客户端APP cocos2d-x项目:</span><span>5</span><span>分</span></p>
 					<span>访问测试:<a href="http://beta.bugly.qq.com/scc8"> cocos2d-x项目  </a></span>
-					<ul class="listUl">
+					<ul class="gradelistUl">
 						<li value="0"></li>
 						<li value="0"></li>
 						<li value="0"></li>
@@ -126,10 +143,10 @@
 						<li value="0"></li>
 					</ul>
 				</li>
-				<li class="listLi">
+				<li class="gradelistLi">
 					<p><span>reactnative项目:</span><span>5</span><span>分</span></p>
 					<span>访问测试:<a href="http://beta.bugly.qq.com/f2ua"> reactnative项目  </a></span>
-					<ul class="listUl">
+					<ul class="gradelistUl">
 						<li value="0"></li>
 						<li value="0"></li>
 						<li value="0"></li>
@@ -137,9 +154,9 @@
 						<li value="0"></li>
 					</ul>
 				</li>
-				<li class="listLi">
+				<li class="gradelistLi">
 					<p><span>七牛云存储压缩上传多图:</span><span>5</span><span>分</span></p><span>访问测试:<a href="http://121.42.156.197/maincontent/UploadImages/demo/views/formdata.html"> 七牛云存储上传多图  </a></span>
-					<ul class="listUl">
+					<ul class="gradelistUl">
 						<li value="0"></li>
 						<li value="0"></li>
 						<li value="0"></li>
@@ -158,15 +175,97 @@
 			<div class="flag"></div>
 				<h3>微信公众号</h3>
 			</div>
-		<img src="http://ovu4rxd0y.bkt.clouddn.com/weixin.jpg" alt="">
+			<div class="weixinContent">
+				<img src="http://ovu4rxd0y.bkt.clouddn.com/weixin.jpg" alt="">
+			</div>
+		
     </div>	
+   <!--  吐槽 -->
+   <div class="tucao">
+   			<div class="title ">
+			<div class="flag"></div>
+				<h3>吐槽</h3>
+			</div>
+			<div class="tucaoContent">
+				<form id="firstForm" class="form-horizontal" role="form">
+				<div class="row">
+					<div class="col-xs-8">
+						<div class="form-group">
+   							 <label for="nicheng">您的昵称</label>
+    						<input id="nicheng" name="username" type="text" class="form-control" placeholder="留下自己的昵称">
+  						</div>
+  						<div class="form-group">
+    						<label for="neirong">吐槽内容</label>
+    						<textarea id="neirong" name="tucaocontent" class="form-control" rows="3" ></textarea>
+  						</div>
+  						<div class="form-group">
+   							 	<label for="tucaocishu">第几次吐槽</label>
+   						 		<div class="col-sm-8">
+     								 <p class="form-control-static">每个IP地址吐槽记录保留上限为5次,注册账号可以不限制吐槽次数
+									<a href="">注册</a>
+     						 		</p>
+    							</div>
+   								<select id="tucaocishu" class="form-control" name="cishuvalue">
+      								<option>1</option>
+      								<option>2</option>
+     						   		<option>3</option>
+      								<option>4</option>
+      								<option>5</option>
+    							</select>
+   
+  						</div>
+  						<div class="form-group">
+   						 	<div class="col-sm-offset-2 col-sm-6">
+     					 		<button id="sub" type="submit" class="btn btn-info">提交吐槽</button>
+    						</div>
+  						</div>
+
+  						<!-- 分界线 -->
+					</div>
+				</div>
+					
+  					
+  					
+  					 
+				</form>
+			</div>
+   	
+   </div>
 
 </body>
 <script src="js/jquery.min.js"></script>
 	
 <script>
-
-	$('.listUl').each(function(i,v){
+ 		$('#sub').click(function(){
+ 			var data=$('#firstForm').serialize();
+			//序列化获得表单数据，结果为：user_id=12&user_name=John&user_age=20
+			console.log(data);
+			var submitData=decodeURIComponent(data,true);
+			//submitData是解码后的表单数据，结果同上
+			console.log(submitData);
+			$.ajax({
+				type: 'POST',
+    			url:'http://121.42.156.197/php/phpweixin/youkehandle.php',
+    			data:submitData,
+   				cache:false,//false是不缓存，true为缓存
+    			async:true,//true为异步，false为同步
+  				beforeSend:function(){
+       			//请求前
+    			},
+   				 success:function(result){
+       			 //请求成功时
+       			 alert('您的提交已经完成');
+    				},
+    			complete:function(){
+        		//请求结束时
+    				},
+   				 error:function(){
+        		//请求失败时
+        		 alert('很遗憾!您的提交失败了');
+    			}
+				});
+ 			});
+	$('.gradelistUl').each(function(i,v){
 		$(v).children('li').each(function(a,b){
 			$(b).click(function(a){
 				$(this).css('background-color','red');
@@ -183,7 +282,7 @@
 			})
 		})
 	})
-	$('.listUl').each(function(i,v){
+	$('.gradelistUl').each(function(i,v){
 		$(v).children('li').each(function(a,b){
 			$(b).mouseover(function(a){
 				$(this).css('background-color','red');
@@ -199,7 +298,7 @@
 			})
 		})
 	})
-	$('.listUl').each(function(i,v){
+	$('.gradelistUl').each(function(i,v){
 		$(v).children('li').each(function(a,b){
 			$(b).mouseleave(function(a){
 				if($(b).attr('value')!==1){
