@@ -236,6 +236,8 @@
 <script src="js/jquery.min.js"></script>
 	
 <script>
+		
+	
  		$('#sub').click(function(){
  			var data=$('#firstForm').serialize();
 			//序列化获得表单数据，结果为：user_id=12&user_name=John&user_age=20
@@ -245,24 +247,23 @@
 			console.log(submitData);
 			$.ajax({
 				type: 'POST',
-    			url:'http://121.42.156.197/php/phpweixin/youkehandle.php',
+    			url:'http://121.42.156.197/phpbase/postindex.php',
     			data:submitData,
    				cache:false,//false是不缓存，true为缓存
     			async:true,//true为异步，false为同步
-  				beforeSend:function(){
-       			//请求前
+    		
+  				
+    			success:function(data){
+    				console.log('success');
+    				console.log(data.result);
+    				alert(data.result);
     			},
-   				 success:function(result){
-       			 //请求成功时
-       			 alert('您的提交已经完成');
-    				},
-    			complete:function(){
-        		//请求结束时
-    				},
-   				 error:function(){
-        		//请求失败时
-        		 alert('很遗憾!您的提交失败了');
-    			}
+    			error:function(data){
+    				console.log('fail');
+    				console.log(data.result);
+    				alert(data);
+    			},
+    			
 				});
  			});
 	$('.gradelistUl').each(function(i,v){
