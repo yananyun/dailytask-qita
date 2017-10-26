@@ -247,21 +247,33 @@
 			console.log(submitData);
 			$.ajax({
 				type: 'POST',
-    			url:'http://121.42.156.197/phpbase/postindex.php',
+    			url:'http://ouryoung.xin/phpbase/postindex.php',
     			data:submitData,
    				cache:false,//false是不缓存，true为缓存
     			async:true,//true为异步，false为同步
+    			dataType:'json',
     		
   				
-    			success:function(data){
+    			success:function(data,textStatus){
     				console.log('success');
-    				console.log(data.result);
-    				alert(data.result);
+    				//console.log(data);
+    				console.log(data);
+    				console.log(data.result.substatustext);
+    				var obj = eval(data);
+
+    				console.log(obj);
+    				console.log(obj.result.substatustext);
+    				alert(obj.result.substatustext);
     			},
-    			error:function(data){
+    			error:function(XmlHttpRequest,textStatus,errorThrown){
     				console.log('fail');
-    				console.log(data.result);
-    				alert(data);
+    				//console.log(data.result.statustext);
+    				console.log(textStatus);
+    				console.log(XmlHttpRequest);
+    				
+    				console.log(errorThrown);
+    				
+    				alert(textStatus);
     			},
     			
 				});
