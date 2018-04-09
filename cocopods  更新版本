@@ -1,0 +1,271 @@
+cocopods  更新版本
+
+Last login: Mon Apr  9 09:33:59 on ttys001
+macserver:~ admindyn$ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+https://gems.ruby-china.org/ added to sources
+https://rubygems.org/ removed from sources
+macserver:~ admindyn$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://gems.ruby-china.org/
+macserver:~ admindyn$ pod -version
+[!] Unknown command: `-version`
+Did you mean: repo?
+
+Usage:
+
+    $ pod COMMAND
+
+      CocoaPods, the Cocoa library package manager.
+
+Commands:
+
+    + cache         Manipulate the CocoaPods cache
+    + deintegrate   Deintegrate CocoaPods from your
+                    project
+    + env           Display pod environment
+    + init          Generate a Podfile for the
+                    current directory
+    + install       Install project dependencies
+                    according to versions from a
+                    Podfile.lock
+    + ipc           Inter-process communication
+    + lib           Develop pods
+    + list          List pods
+    + outdated      Show outdated project
+                    dependencies
+    + plugins       Show available CocoaPods
+                    plugins
+    + repo          Manage spec-repositories
+    + search        Search for pods
+    + setup         Setup the CocoaPods environment
+    + spec          Manage pod specs
+    + trunk         Interact with the CocoaPods API
+                    (e.g. publishing new specs)
+    + try           Try a Pod!
+    + update        Update outdated project
+                    dependencies and create new
+                    Podfile.lock
+
+Options:
+
+    --silent        Show nothing
+    --version       Show the version of the tool
+    --verbose       Show more debugging information
+    --no-ansi       Show output without ANSI codes
+    --help          Show help banner of specified
+                    command
+macserver:~ admindyn$ pod --version
+1.1.1
+macserver:~ admindyn$ sudo gem install cocoapods
+Password:
+Fetching: concurrent-ruby-1.0.5.gem (100%)
+Successfully installed concurrent-ruby-1.0.5
+Fetching: i18n-0.9.5.gem (100%)
+Successfully installed i18n-0.9.5
+Fetching: thread_safe-0.3.6.gem (100%)
+Successfully installed thread_safe-0.3.6
+Fetching: tzinfo-1.2.5.gem (100%)
+Successfully installed tzinfo-1.2.5
+Fetching: activesupport-4.2.10.gem (100%)
+Successfully installed activesupport-4.2.10
+Fetching: nap-1.1.0.gem (100%)
+Successfully installed nap-1.1.0
+Fetching: fuzzy_match-2.0.4.gem (100%)
+Successfully installed fuzzy_match-2.0.4
+Fetching: cocoapods-core-1.5.0.gem (100%)
+Successfully installed cocoapods-core-1.5.0
+Fetching: claide-1.0.2.gem (100%)
+Successfully installed claide-1.0.2
+Fetching: cocoapods-deintegrate-1.0.2.gem (100%)
+Successfully installed cocoapods-deintegrate-1.0.2
+Fetching: cocoapods-downloader-1.2.0.gem (100%)
+Successfully installed cocoapods-downloader-1.2.0
+Fetching: cocoapods-plugins-1.0.0.gem (100%)
+Successfully installed cocoapods-plugins-1.0.0
+Fetching: cocoapods-search-1.0.0.gem (100%)
+Successfully installed cocoapods-search-1.0.0
+Fetching: cocoapods-stats-1.0.0.gem (100%)
+Successfully installed cocoapods-stats-1.0.0
+Fetching: netrc-0.11.0.gem (100%)
+Successfully installed netrc-0.11.0
+Fetching: cocoapods-trunk-1.3.0.gem (100%)
+Successfully installed cocoapods-trunk-1.3.0
+Fetching: cocoapods-try-1.1.0.gem (100%)
+Successfully installed cocoapods-try-1.1.0
+Fetching: molinillo-0.6.5.gem (100%)
+Successfully installed molinillo-0.6.5
+Fetching: atomos-0.1.2.gem (100%)
+Successfully installed atomos-0.1.2
+Fetching: CFPropertyList-3.0.0.gem (100%)
+Successfully installed CFPropertyList-3.0.0
+Fetching: colored2-3.1.2.gem (100%)
+Successfully installed colored2-3.1.2
+Fetching: nanaimo-0.2.5.gem (100%)
+Successfully installed nanaimo-0.2.5
+Fetching: xcodeproj-1.5.7.gem (100%)
+Successfully installed xcodeproj-1.5.7
+Fetching: escape-0.0.4.gem (100%)
+Successfully installed escape-0.0.4
+Fetching: fourflusher-2.0.1.gem (100%)
+Successfully installed fourflusher-2.0.1
+Fetching: gh_inspector-1.1.3.gem (100%)
+Successfully installed gh_inspector-1.1.3
+Fetching: ruby-macho-1.1.0.gem (100%)
+Successfully installed ruby-macho-1.1.0
+Fetching: cocoapods-1.5.0.gem (100%)
+Successfully installed cocoapods-1.5.0
+Parsing documentation for concurrent-ruby-1.0.5
+Installing ri documentation for concurrent-ruby-1.0.5
+Parsing documentation for i18n-0.9.5
+Installing ri documentation for i18n-0.9.5
+Parsing documentation for thread_safe-0.3.6
+Installing ri documentation for thread_safe-0.3.6
+Parsing documentation for tzinfo-1.2.5
+Installing ri documentation for tzinfo-1.2.5
+Parsing documentation for activesupport-4.2.10
+Installing ri documentation for activesupport-4.2.10
+Parsing documentation for nap-1.1.0
+Installing ri documentation for nap-1.1.0
+Parsing documentation for fuzzy_match-2.0.4
+Installing ri documentation for fuzzy_match-2.0.4
+Parsing documentation for cocoapods-core-1.5.0
+Installing ri documentation for cocoapods-core-1.5.0
+Parsing documentation for claide-1.0.2
+Installing ri documentation for claide-1.0.2
+Parsing documentation for cocoapods-deintegrate-1.0.2
+Installing ri documentation for cocoapods-deintegrate-1.0.2
+Parsing documentation for cocoapods-downloader-1.2.0
+Installing ri documentation for cocoapods-downloader-1.2.0
+Parsing documentation for cocoapods-plugins-1.0.0
+Installing ri documentation for cocoapods-plugins-1.0.0
+Parsing documentation for cocoapods-search-1.0.0
+Installing ri documentation for cocoapods-search-1.0.0
+Parsing documentation for cocoapods-stats-1.0.0
+Installing ri documentation for cocoapods-stats-1.0.0
+Parsing documentation for netrc-0.11.0
+Installing ri documentation for netrc-0.11.0
+Parsing documentation for cocoapods-trunk-1.3.0
+Installing ri documentation for cocoapods-trunk-1.3.0
+Parsing documentation for cocoapods-try-1.1.0
+Installing ri documentation for cocoapods-try-1.1.0
+Parsing documentation for molinillo-0.6.5
+Installing ri documentation for molinillo-0.6.5
+Parsing documentation for atomos-0.1.2
+Installing ri documentation for atomos-0.1.2
+Parsing documentation for CFPropertyList-3.0.0
+Installing ri documentation for CFPropertyList-3.0.0
+Parsing documentation for colored2-3.1.2
+Installing ri documentation for colored2-3.1.2
+Parsing documentation for nanaimo-0.2.5
+Installing ri documentation for nanaimo-0.2.5
+Parsing documentation for xcodeproj-1.5.7
+Installing ri documentation for xcodeproj-1.5.7
+Parsing documentation for escape-0.0.4
+Installing ri documentation for escape-0.0.4
+Parsing documentation for fourflusher-2.0.1
+Installing ri documentation for fourflusher-2.0.1
+Parsing documentation for gh_inspector-1.1.3
+Installing ri documentation for gh_inspector-1.1.3
+Parsing documentation for ruby-macho-1.1.0
+Installing ri documentation for ruby-macho-1.1.0
+Parsing documentation for cocoapods-1.5.0
+Installing ri documentation for cocoapods-1.5.0
+Done installing documentation for concurrent-ruby, i18n, thread_safe, tzinfo, activesupport, nap, fuzzy_match, cocoapods-core, claide, cocoapods-deintegrate, cocoapods-downloader, cocoapods-plugins, cocoapods-search, cocoapods-stats, netrc, cocoapods-trunk, cocoapods-try, molinillo, atomos, CFPropertyList, colored2, nanaimo, xcodeproj, escape, fourflusher, gh_inspector, ruby-macho, cocoapods after 27 seconds
+28 gems installed
+macserver:~ admindyn$ pod --version
+1.5.0
+macserver:~ admindyn$ 
+
+
+
+更新本地库
+
+
+macserver:~ admindyn$ cd /Users/admindyn/Desktop/dailyspace/key的2017/StartPoint/Pods 
+cd macserver:Pods admindyn$ cd ../
+macserver:StartPoint admindyn$ pod repo update
+
+
+
+
+
+
+
+更新程序依赖库
+
+
+macserver:StartPoint admindyn$ pwd
+/Users/admindyn/Desktop/dailyspace/key的2017/StartPoint
+macserver:StartPoint admindyn$ pod update
+/Users/admindyn/.rvm/gems/ruby-2.3.0@global/gems/cocoapods-1.5.0/lib/cocoapods/executable.rb:89: warning: Insecure world writable dir /Users/admindyn/Desktop/dailyspace/key的2017/StartPoint in PATH, mode 040777
+Update all pods
+Updating local specs repositories
+  $ /usr/bin/git -C /Users/admindyn/.cocoapods/repos/master fetch
+  origin --progress
+  remote: Counting objects: 157, done.        
+  remote: Compressing objects: 100% (143/143), done.        
+  remote: Total 157 (delta 106), reused 9 (delta 5), pack-reused 0        
+  Receiving objects: 100% (157/157), 15.44 KiB | 2.21 MiB/s, done.
+  Resolving deltas: 100% (106/106), completed with 39 local objects.
+  From https://github.com/CocoaPods/Specs
+     194ca9005d2..856a611b265  master     -> origin/master
+  $ /usr/bin/git -C /Users/admindyn/.cocoapods/repos/master
+  rev-parse --abbrev-ref HEAD
+  master
+  $ /usr/bin/git -C /Users/admindyn/.cocoapods/repos/master reset
+  --hard origin/master
+  HEAD is now at 856a611b265 [Add] CTMeditor 0.0.1
+Analyzing dependencies
+Downloading dependencies
+Using AFNetworking (2.5.4)
+Installing BaiduMapKit 3.4.4 (was 3.0.0)
+Using Bugly (2.4.8)
+Using FMDB (2.7.2)
+Using KTScannerView (1.0)
+Using MBProgressHUD (0.9.2)
+Using MTLFMDBAdapter (0.2.0)
+Using Mantle (2.1.0)
+Using MarqueeLabel (2.5.0)
+Using OBShapedButton (1.0.2)
+Using PNChart (0.8.9)
+Using RBStoryboardLink (0.1.4)
+Using Reachability (3.2)
+Using RongCloudIMKit (2.4.11)
+Using SBJson (3.1.1)
+Using SDWebImage (3.7.6)
+Using SSKeychain (1.4.0)
+Using SVPullToRefresh (0.4.1)
+Using SWTableViewCell (0.3.7)
+Using TPKeyboardAvoiding (1.2.11)
+Using UICountingLabel (1.2.0)
+Using UMengAnalytics-NO-IDFA (3.6.7)
+Using WYPopoverController (0.3.9)
+Using iToast (0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 21 dependencies from the Podfile and 24 total pods installed.
+
+[!] Smart quotes were detected and ignored in your Podfile. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+
+[!] The `StartPoint [Debug]` target overrides the `FRAMEWORK_SEARCH_PATHS` build setting defined in `Pods/Target Support Files/Pods-StartPoint/Pods-StartPoint.debug.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+
+[!] The `StartPoint [Debug]` target overrides the `HEADER_SEARCH_PATHS` build setting defined in `Pods/Target Support Files/Pods-StartPoint/Pods-StartPoint.debug.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+
+[!] The `StartPoint [Release]` target overrides the `FRAMEWORK_SEARCH_PATHS` build setting defined in `Pods/Target Support Files/Pods-StartPoint/Pods-StartPoint.release.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+
+[!] The `StartPoint [Release]` target overrides the `HEADER_SEARCH_PATHS` build setting defined in `Pods/Target Support Files/Pods-StartPoint/Pods-StartPoint.release.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+
+[!] RongCloudIMKit has been deprecated
+
+[!] SBJson has been deprecated in favor of SBJson4
+macserver:StartPoint admindyn$ 
