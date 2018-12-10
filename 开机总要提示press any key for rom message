@@ -1,0 +1,14 @@
+HP Compoq 6005 Pro Microlower 老爷台式机 重装系统后 开机总要提示press any key for rom message 而且需要按空格键 系统自检过去才能正常进入系统 问题解决
+
+重装完系统后 开机 提示press any key for rom messages 必须按空格键 系统自检过去才能正常进入系统
+原因 之前机子有光驱 但是光驱坏了 不能正常弹出
+
+于是从主板拔除了光驱的连接线  包括供电和数据线 但是只拔除了光驱这一端的接口 没拔主板 的对应接口 
+
+开机就出现之前的状况 
+在重装系统前 该机子也是开机总弹出press any key for rom message 页面 但是没必要按任何键 能自动进入系统
+
+最后我门对应拔除后主板一端对应光驱的 
+然后开机 这一次正常了
+开机 直接进入 系统启动画面 不再提示press any key for rom message界面
+
